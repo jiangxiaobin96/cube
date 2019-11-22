@@ -3,7 +3,7 @@
 
       <div style="margin:120px auto 80px;" id="mofang" ></div>
 
-      <div id="btns" class="btns" style="margin:50px auto 20px; width:300px;">
+      <div id="btns" class="btns" style="margin:50px auto 20px; width:500px;">
           <input type="button" value="u"/>
           <input type="button" value="d"/>
           <input type="button" value="l"/>
@@ -33,12 +33,14 @@
 
 <!--<script type="text/javascript" src="Cube.js"></script>-->
 <script type="text/javascript" defer=true>
+    import axios from 'axios'
+    import qs from 'qs'
     import {Cube} from '../components/Cube.js'
     export default {
         name: "cubeVue",
         // data: function(){
         //     return{
-        //
+        //         initC:''
         //     }
         // },
         mounted(){
@@ -48,8 +50,9 @@
             solution(){
               // console.log("id:"+document.getElementById("mofang"))
               // console.log("aaa")
+              let initC=""
                 let cube= new Cube("mofang",{borderLength:200});
-                console.log("aaa")
+                // console.log("aaa")
                 let aInt=document.getElementById('btns').getElementsByTagName('input');
                 console.log("aInt:"+aInt)
                 for(let i=0;i<aInt.length;i++){
@@ -70,13 +73,26 @@
                 };
                 aInt2[4].onclick=function(){
                   let value=aInt2[3].value;
+                  console.log(value)
                   cube.turn3s(value);
                 };
                 aInt2[6].onclick=function(){
                   let value=aInt2[5].value;
+                  initC = value
+                  // console.log(initC)
                   cube.setColorChar(value)
                 };
                 aInt2[7].onclick=function(){
+                  // console.log(initC)
+                    axios.post('/apis/operation',qs.stringify({
+                        "initC": initC
+                    })).then(response => {
+                        // console.log(response.data)
+                        cube.turn3s(response.data)
+
+                    }).catch(e => {
+                        this.error.push(e)
+                    })
                 };
             }
         }

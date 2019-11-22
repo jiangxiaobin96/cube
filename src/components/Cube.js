@@ -726,6 +726,9 @@ Cube.prototype.random = function (n) {
             let coor = coors[_this.getRandom(0, 3)];
             let num = _this.getRandom(0, order);
             let dir = _this.getRandom(0, 2);
+            // console.log("coor:"+coor)
+            // console.log("num:"+num)
+            // console.log("dir:"+dir)
             _this.turn(coor, num, dir, function () {
                 let timeout = setTimeout(function () {
                     clearTimeout(timeout);
