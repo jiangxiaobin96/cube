@@ -22,8 +22,8 @@
           <input type="button" value="重置颜色" style="margin-top:10px;"/>
           <input type="button" value="重置位置" style="margin-top:10px;"/>
           <input type="button" value="随机打乱" style="margin-top:10px;"/>
-          <input type="text" style="margin-top:10px;" value="ddr'd'ffbdrrddr'ffd'ffu'bblluudrru">
-          <input type="button" style="margin-top:10px" value="批量操作"/>
+          <!--<input type="text" style="margin-top:10px;" value="ddr'd'ffbdrrddr'ffd'ffu'bblluudrru">-->
+          <!--<input type="button" style="margin-top:10px" value="批量操作"/>-->
           <input type="text" style="margin-top:10px;" value="DRLUUBFBRBLURRLRUBLRDDFDLFUFUFFDBRDUBRUFLLFDDBFLUBLRBD">
           <input type="button" style="margin-top:10px" value="设置颜色"/>
           <input type="button" style="margin-top:10px" value="还原"/>
@@ -68,26 +68,35 @@
                 aInt2[1].onclick=function(){
                   cube.initL();
                 };
+                //随机打乱
                 aInt2[2].onclick=function(){
-                  cube.random();
+                  // cube.random();
+                  axios.get('/apis/scramble').then(response => {
+                    console.log(response.data)
+                    cube.setColorChar(response.data)
+                    initC = response.data
+                  })
                 };
+                //批量操作
+                // aInt2[4].onclick=function(){
+                //   let value=aInt2[3].value;
+                //   console.log(value)
+                //   cube.turn3s(value);
+                // };
+                //设置颜色
                 aInt2[4].onclick=function(){
-                  let value=aInt2[3].value;
-                  console.log(value)
-                  cube.turn3s(value);
-                };
-                aInt2[6].onclick=function(){
                   let value=aInt2[5].value;
                   initC = value
                   // console.log(initC)
                   cube.setColorChar(value)
                 };
-                aInt2[7].onclick=function(){
+                //还原
+                aInt2[5].onclick=function(){
                   // console.log(initC)
                     axios.post('/apis/operation',qs.stringify({
                         "initC": initC
                     })).then(response => {
-                        // console.log(response.data)
+                        console.log(response.data)
                         cube.turn3s(response.data)
 
                     }).catch(e => {
