@@ -36,6 +36,7 @@
     import axios from 'axios'
     import qs from 'qs'
     import {Cube} from '../components/Cube.js'
+    // import {Vue} from "vue";
     export default {
         name: "cubeVue",
         // data: function(){
@@ -48,6 +49,7 @@
         },
         methods: {
             solution(){
+              let tt = this
               // console.log("id:"+document.getElementById("mofang"))
               // console.log("aaa")
               let initC=""
@@ -85,20 +87,32 @@
                 // };
                 //设置颜色
                 aInt2[4].onclick=function(){
-                  let value=aInt2[5].value;
+                  let value=aInt2[3].value;
                   initC = value
                   // console.log(initC)
                   cube.setColorChar(value)
                 };
                 //还原
                 aInt2[5].onclick=function(){
+                  // let vm = this
                   // console.log(initC)
                     axios.post('/apis/operation',qs.stringify({
                         "initC": initC
                     })).then(response => {
                         console.log(response.data)
-                        cube.turn3s(response.data)
-
+                        if(response.data.indexOf("Error") == -1){
+                          cube.turn3s(response.data)
+                        }else{
+                          tt.$alert('此次输入为非法输入! 请重新输入。', '提示', {
+                            confirmButtonText: '确定',
+                            // callback: action => {
+                            //   this.$message({
+                            //     type: 'info',
+                            //     message: `action: ${ action }`
+                            //   });
+                            // }
+                          });
+                        }
                     }).catch(e => {
                         this.error.push(e)
                     })
