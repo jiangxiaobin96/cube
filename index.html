@@ -1,12 +1,288 @@
-<!DOCTYPE html>
+﻿<!doctype html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>cube</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+    <title></title>
+    <style>
+        input{ font-size:16px; height:26px;}
+        .btns input {
+            height: 41px;
+            width: 100px;
+            margin: 5px;
+            padding: 0px;
+            border: 2px #00ffff;
+            border-radius: 12px;
+            background-color: #00ffff;
+        }
+        .cs input {
+            height: 41px;
+            width: 100px;
+            margin: 5px 0;
+            padding: 0px;
+            border: 2px #00ffff;
+            border-radius: 12px;
+            background-color: #00ffff;
+        }
+        .mf {
+            height: 400px;
+            width: 400px;
+            display: inline-block;
+            
+        }
+        a {
+            height:100px;
+            width:300px;
+            display:inline-block;
+        }
+        a input:hover{
+            background-color:skyblue;
+        }
+        #txt {
+            height: 41px;
+            width: 500px;
+            margin: 5px;
+            padding: 0px;
+            border: 2px #ffffff;
+            background-color: #ffffff;
+        }
+        .faces input {
+            height: 32px;
+            width: 32px;
+            margin: 1px;
+            padding: 0px;
+            border-width:2px;
+            border: 2px #00ffff;
+            border-radius: 12px;
+            background-color: #00ffff;
+            text-align:center;
+        }
+
+    </style>
+</head>
+<body style="background-image: url(image.jpg)">
+
+    <div style="height:100px"></div>
+    <div>
+
+        <a style="height:300px; width:251px; display:inline-block;"></a>
+
+        <a id="mf"></a>
+
+        <a style="width:150px"></a>
+
+        <a id="btns" class="btns">
+            <input type="button" value="u" />
+            <input type="button" value="d" />
+            <input type="button" value="l" />
+            <input type="button" value="r" />
+            <input type="button" value="f" />
+            <input type="button" value="b" />
+            <input type="button" value="u'" />
+            <input type="button" value="d'" />
+            <input type="button" value="l'" />
+            <input type="button" value="r'" />
+            <input type="button" value="f'" />
+            <input type="button" value="b'" />
+        </a>
+
+        <a class="cs" id="cs" style="width:300px; margin:0 auto;">
+            <input type="button" value="重置颜色" style="margin-top:10px;" />
+            <input type="button" value="重置位置" style="margin-top:10px;" />
+            <input type="button" value="随机打乱" style="margin-top:10px;" />
+            <input type="button" style="margin-top:10px" value="还原" />
+            <input type="button" style="margin-top:10px" value="批量操作" />
+            <input id="txt" type="text" style="margin-top:10px;" value="ddr'd'ffbdrrddr'ffd'ffu'bblluudrru">
+            <input type="button" style="margin-top:10px" value="设置颜色" />
+            <input id="txt" type="text" style="margin-top:10px;" value="DRLUUBFBRBLURRLRUBLRDDFDLFUFUFFDBRDUBRUFLLFDDBFLUBLRBD">
+            <input type="button" value="输入状态" style="margin-top:10px;" />
+
+        </a>
+    </div>
+    <div style="height:100px"></div>
+    <div id="up_div">
+        <a style="width:330px"></a>
+        <a id="up" class="faces" style="height:102px; width:110px; margin:1px 0;">
+            <input type="text" maxlength="1" value="R">
+            <input type="text" maxlength="1" value="R">
+            <input type="text" maxlength="1" value="R">
+            <input type="text" maxlength="1" value="R">
+            <input type="text" maxlength="1" value="R">
+            <input type="text" maxlength="1" value="R">
+            <input type="text" maxlength="1" value="R">
+            <input type="text" maxlength="1" value="R">
+            <input type="text" maxlength="1" value="R">
+        </a>
+    </div>
+    <div id="up_mid">
+        <a style="width:209px"></a>
+        <a id="left" class="faces" style="height:102px; width:110px; margin:1px 0;">
+            <input type="text" maxlength="1" value="U">
+            <input type="text" maxlength="1" value="U">
+            <input type="text" maxlength="1" value="U">
+            <input type="text" maxlength="1" value="U">
+            <input type="text" maxlength="1" value="U">
+            <input type="text" maxlength="1" value="U">
+            <input type="text" maxlength="1" value="U">
+            <input type="text" maxlength="1" value="U">
+            <input type="text" maxlength="1" value="U">
+        </a>
+        <a style="width:3px"></a>
+        <a id="front" class="faces" style="height:102px; width:110px; margin:1px 0;">
+            <input type="text" maxlength="1" value="U">
+            <input type="text" maxlength="1" value="U">
+            <input type="text" maxlength="1" value="U">
+            <input type="text" maxlength="1" value="U">
+            <input type="text" maxlength="1" value="U">
+            <input type="text" maxlength="1" value="U">
+            <input type="text" maxlength="1" value="U">
+            <input type="text" maxlength="1" value="U">
+            <input type="text" maxlength="1" value="U">
+        </a>
+        <a style="width:3px"></a>
+        <a id="right" class="faces" style="height:102px; width:110px; margin:1px 0;">
+            <input type="text" maxlength="1" value="U">
+            <input type="text" maxlength="1" value="U">
+            <input type="text" maxlength="1" value="U">
+            <input type="text" maxlength="1" value="U">
+            <input type="text" maxlength="1" value="U">
+            <input type="text" maxlength="1" value="U">
+            <input type="text" maxlength="1" value="U">
+            <input type="text" maxlength="1" value="U">
+            <input type="text" maxlength="1" value="U">
+        </a>
+        <a style="width:3px"></a>
+        <a id="back" class="faces" style="height:102px; width:110px; margin:1px 0;">
+            <input type="text" maxlength="1" value="U">
+            <input type="text" maxlength="1" value="U">
+            <input type="text" maxlength="1" value="U">
+            <input type="text" maxlength="1" value="U">
+            <input type="text" maxlength="1" value="U">
+            <input type="text" maxlength="1" value="U">
+            <input type="text" maxlength="1" value="U">
+            <input type="text" maxlength="1" value="U">
+            <input type="text" maxlength="1" value="U">
+        </a>
+    </div>
+    <div id="up_bottom">
+        <a style="width:330px"></a>
+        <a id="bottom" class="faces" style="height:102px; width:110px; margin:1px 0;">
+            <input type="text" maxlength="1" value="U">
+            <input type="text" maxlength="1" value="U">
+            <input type="text" maxlength="1" value="U">
+            <input type="text" maxlength="1" value="U">
+            <input type="text" maxlength="1" value="U">
+            <input type="text" maxlength="1" value="U">
+            <input type="text" maxlength="1" value="U">
+            <input type="text" maxlength="1" value="U">
+            <input type="text" maxlength="1" value="U">
+        </a>
+    </div>
+
+    <!- 注释的内容 ->
+    <script type="text/javascript" src="Cube.js"></script>
+    <script type="text/javascript">
+        var cube = new Cube('mf', { borderLength: 300 });
+
+        var aInt = document.getElementById('btns').getElementsByTagName('input');
+        for (var i = 0; i < aInt.length; i++) {
+            aInt[i].onclick = function () {
+                cube.turn3(this.value);
+            }
+        }
+        var aInt2 = document.getElementById('cs').getElementsByTagName('input');
+        aInt2[0].onclick = function () {
+            cube.initColor();
+        };
+        aInt2[1].onclick = function () {
+            cube.initL();
+        };
+        aInt2[2].onclick = function () {
+            cube.random();
+        };
+        aInt2[4].onclick = function () {
+            var value = aInt2[5].value;
+            cube.turn3s(value);
+        };
+        aInt2[6].onclick = function () {
+            var value = aInt2[7].value;
+            cube.setColorChar(value);
+        };
+
+
+        aInt2[8].onclick = function () {
+            var colorType = ['yellow', '#fff', 'blue', 'green', 'red', 'orange'];
+            var arr = [];
+            var loc = 0;
+
+            var tmp = document.getElementById('up').getElementsByTagName('input')
+            var state = tmp[0].value;
+            for (var i = 1; i < 9; i++) {
+                state = state + tmp[i].value;
+                loc = loc + 1;
+            }
+
+            var tmp = document.getElementById('bottom').getElementsByTagName('input')
+            for (var i = 0; i < 9; i++) {
+                state = state + tmp[i].value;
+                loc = loc + 1;
+            }
+
+            var tmp = document.getElementById('left').getElementsByTagName('input')
+            for (var i = 0; i < 9; i++) {
+                state = state + tmp[i].value;
+                loc = loc + 1;
+            }
+
+            var tmp = document.getElementById('right').getElementsByTagName('input')
+            for (var i = 0; i < 9; i++) {
+                state = state + tmp[i].value;
+                loc = loc + 1;
+            }
+
+            var tmp = document.getElementById('front').getElementsByTagName('input')
+            for (var i = 0; i < 9; i++) {
+                state = state + tmp[i].value;
+                loc = loc + 1;
+            }
+
+            var tmp = document.getElementById('back').getElementsByTagName('input')
+            for (var i = 0; i < 9; i++) {
+                state = state + tmp[i].value;
+                loc = loc + 1;
+            }
+            //state是要传入后端的字符串
+            color = state;
+            for (var i = 0; i < 6; i++) {
+                var sub = color.substr(i * 9, 9);//截取从i*9开始的连续9个字符
+                var subArr = [];
+                for (var j = 0; j < 9; j++) {
+                    switch (sub[j]) {
+                        case "U"://yellow
+                            subArr.push(colorType[0]);//如果是第0种颜色，则将white填入
+                            break;
+                        case "R"://white
+                            subArr.push(colorType[1]);
+                            break;
+                        case "F"://blue
+                            subArr.push(colorType[2]);
+                            break;
+                        case "D"://green
+                            subArr.push(colorType[3]);
+                            break;
+                        case "L"://red
+                            subArr.push(colorType[4]);
+                            break;
+                        case "B"://orange
+                            subArr.push(colorType[5]);
+                            break;
+                    }
+                }
+                arr.push(subArr);
+            }
+            cube.setColor(arr);
+
+        };
+    </script>
+
+</body>
 </html>
