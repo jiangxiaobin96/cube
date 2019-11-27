@@ -1,0 +1,103 @@
+
+
+input {
+    font-size: 16px;
+    height: 26px;
+}
+
+.btns button {
+    height: 41px;
+    width: 100px;
+    margin: 5px;
+    padding: 0px;
+    color: #FFFFFF;
+    border: 0px #00ffff;
+    text-align: center;
+    font-size: 20px;
+    /*border-radius: 12px;*/
+    /*background-color: #5094a2;*/
+    background-image: linear-gradient(to right, #5094a2 0%, #5094a7 100%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 3px 8px rgba(0, 0, 0, 0.1);
+    transition-property: border-radius; /*选择hover变化的元素*/
+    transition-duration: 1s;
+    -webkit-transition-property: border-radius; /* Safari and Chrome */
+    -webkit-transition-duration: 1s; /* Safari and Chrome */
+}
+#btns button:hover {
+    border-radius: 30px;
+}
+
+.cs button {
+    height: 41px;
+    width: 100px;
+    margin: 5px 0;
+    padding: 0px;
+    border: 0px #00ffff;
+    color: #FFFFFF; /*字体颜色*/
+    text-align: center; /*字体居中*/
+    font-size: 15px; /*字体粗细*/
+    border: 2px #00ffff;
+    /*border-radius: 12px;*/
+    background-color: #00ffff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2), 0 3px 8px rgba(0, 0, 0, 0.1);
+    transition-property: border-radius; /*选择hover变化的元素*/
+    transition-duration: 1s;
+    -webkit-transition-property: border-radius; /* Safari and Chrome */
+    -webkit-transition-duration: 1s; /* Safari and Chrome */
+}
+
+    .cs button:hover {
+        border-radius: 30px;
+    }
+
+.cs input {
+    height: 41px;
+    width: 100px;
+    margin: 5px 0;
+    padding: 0px;
+    border: 2px #00ffff;
+    border-radius: 12px;
+    background-color: #00ffff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2), 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.faces input {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mf {
+    height: 400px;
+    width: 400px;
+    display: inline-block;
+}
+
+a {
+    height: 100px;
+    width: 300px;
+    display: inline-block;
+}
+
+
+
+#txt {
+    height: 41px;
+    width: 500px;
+    margin: 5px;
+    padding: 0px;
+    border: 2px #ffffff;
+    background-color: #ffffff;
+}
+
+.faces input {
+    height: 32px;
+    width: 32px;
+    margin: 1px;
+    padding: 0px;
+    border-width: 2px;
+    border: 2px #00ffff;
+    border-radius: 12px;
+    background-color: #00ffff;
+    text-align: center;
+}
+
