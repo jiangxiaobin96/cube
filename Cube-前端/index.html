@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html>
 <head>
     <meta charset="utf-8">
@@ -159,43 +159,88 @@
             var colorType = ['yellow', '#fff', 'blue', 'green', 'red', 'orange'];
             var arr = [];
             var loc = 0;
+            var cc = 0;
 
             var tmp = document.getElementById('up').getElementsByTagName('input')
             var state = tmp[0].value;
             for (var i = 1; i < 9; i++) {
                 state = state + tmp[i].value;
-                loc = loc + 1;
             }
 
             var tmp = document.getElementById('bottom').getElementsByTagName('input')
-            for (var i = 0; i < 9; i++) {
-                state = state + tmp[i].value;
-                loc = loc + 1;
+            cc = 6;
+            while (cc < 9) {
+                state = state + tmp[cc].value;
+                cc++;
+            }
+            cc = 3;
+            while (cc < 6) {
+                state = state + tmp[cc].value;
+                cc++;
+            }
+            cc = 0;
+            while (cc < 3) {
+                state = state + tmp[cc].value;
+                cc++;
             }
 
+
             var tmp = document.getElementById('left').getElementsByTagName('input')
-            for (var i = 0; i < 9; i++) {
-                state = state + tmp[i].value;
-                loc = loc + 1;
+            cc = 0;
+            while (cc < 7) {
+                state = state + tmp[cc].value;
+                cc+=3;
+            }
+            cc = 1;
+            while (cc < 8) {
+                state = state + tmp[cc].value;
+                cc+=3;
+            }
+            cc = 2;
+            while (cc < 9) {
+                state = state + tmp[cc].value;
+                cc+=3;
             }
 
             var tmp = document.getElementById('right').getElementsByTagName('input')
-            for (var i = 0; i < 9; i++) {
-                state = state + tmp[i].value;
-                loc = loc + 1;
+            cc = 2;
+            while (cc < 9) {
+                state = state + tmp[cc].value;
+                cc += 3;
+            }
+            cc = 1;
+            while (cc < 8) {
+                state = state + tmp[cc].value;
+                cc += 3;
+            }
+            cc = 0;
+            while (cc < 7) {
+                state = state + tmp[cc].value;
+                cc += 3;
             }
 
             var tmp = document.getElementById('front').getElementsByTagName('input')
             for (var i = 0; i < 9; i++) {
                 state = state + tmp[i].value;
-                loc = loc + 1;
             }
 
             var tmp = document.getElementById('back').getElementsByTagName('input')
-            for (var i = 0; i < 9; i++) {
-                state = state + tmp[i].value;
-                loc = loc + 1;
+            cc = 2;
+            while (cc > -1) {
+                state = state + tmp[cc].value;
+                cc--;
             }
+            cc = 5;
+            while (cc > 2) {
+                state = state + tmp[cc].value;
+                cc--;
+            }
+            cc = 8;
+            while (cc > 5) {
+                state = state + tmp[cc].value;
+                cc--;
+            }
+
             //state是要传入后端的字符串
             color = state;
             for (var i = 0; i < 6; i++) {
