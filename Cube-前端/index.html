@@ -17,36 +17,29 @@
 
         <div id="btns" class="btns" style="height:350px; width: 300px; display:inline-block;">
             <button type="button" value="u" /><span>u </span></button>
-            <button type="button" value="d" /><span>d </span></button>
-            <button type="button" value="l" /><span>r </span></button>
-            <button type="button" value="r" /><span>f</span></button>
-            <button type="button" value="f" /><span>b </span></button>
-            <button type="button" value="b" /><span>b </span></button>
             <button type="button" value="u'" /><span>u' </span></button>
+            <button type="button" value="d" /><span>d </span></button>
             <button type="button" value="d'" /><span>d' </span></button>
+            <button type="button" value="l" /><span>l </span></button>
             <button type="button" value="l'" /><span>l' </span></button>
+            <button type="button" value="r" /><span>r</span></button>
             <button type="button" value="r'" /><span>r' </span></button>
+            <button type="button" value="f" /><span>f </span></button>
             <button type="button" value="f'" /><span>f' </span></button>
+            <button type="button" value="b" /><span>b </span></button>
             <button type="button" value="b'" /><span>b' </span></button>
         </div>
-
-        <a class="cs" id="cs" style="width:300px; margin:0 auto;">
-            <button type="button" value="重置颜色" style="margin-top:10px; background-color:#52390c" /><span>重置颜色 </span></button>
+        <div class="cs" id="cs" style="height: 56px; width:200px; display: inline-block; margin:0 auto;">
+            <button type="button" value="重置颜色" style="margin-top:10px; background-color:#d4b0b7" /><span>重置颜色 </span></button>
             <button type="button" value="重置位置" style="margin-top:10px; background-color:#885454" /><span>重置位置 </span></button>
-            <button type="button" value="随机打乱" style="margin-top:10px; background-color:#d4b0b7" /><span>随机打乱 </span></button>
-            <button type="button" value="还原"     style="margin-top:10px; background-color:#895b9c" /><span>还原 </span></button>
-            <button type="button" value="批量操作" style="margin-top:10px; background-color:#52390c"  /><span>批量操作 </span></button>
-            <input id="txt" type="text" style="margin-top:10px;" value="ddr'd'ffbdrrddr'ffd'ffu'bblluudrru">
-            <button type="button" value="设置颜色" style="margin-top:10px; background-color:#ffd800"/><span>设置颜色 </span></button>
-            <input id="txt" type="text" style="margin-top:10px;" value="DRLUUBFBRBLURRLRUBLRDDFDLFUFUFFDBRDUBRUFLLFDDBFLUBLRBD">
-            <button type="button" value="输入状态" style="margin-top:10px; background-color:#d4b0b7" /><span>输入状态 </span></button>
-
-        </a>
+            <button type="button" value="随机打乱" style="margin-top:10px; background-color:#8a7856" /><span>随机打乱 </span></button>
+            <button type="button" value="还原"     style="margin-top:10px; background-color:#895b9c" /><span>还原     </span></button>
+        </div>
     </div>
     <div style="height:40px"></div>
-    <div id="up_div">
+    <div class="faces_div">
         <a style="width:330px"></a>
-        <a id="up" class="faces" style="height:102px; width:112px; margin:1px 0;">
+        <a id="up" class="faces" style="height:152px; width:162px; margin:1px 0;">
             <input type="text" maxlength="1" value="R">
             <input type="text" maxlength="1" value="R">
             <input type="text" maxlength="1" value="R">
@@ -56,61 +49,71 @@
             <input type="text" maxlength="1" value="R">
             <input type="text" maxlength="1" value="R">
             <input type="text" maxlength="1" value="R">
+        </a>
+        <a style="width:20px"></a>
+        <div id="color_buttons">
+            <button style="background-color:red"></button>
+            <button style="background-color:orange"></button>
+            <button style="background-color:yellow"></button>
+            <button style="background-color:green"></button>
+            <button style="background-color:blue"></button>
+            <button style="background-color:#FFF"></button>
+        </div>
+        <a style="width:50px"></a>
+        <div id="state_input" style="height: 20px; display:inline-block">
+            <button type="button" value="输入状态" style="margin-top:10px; background-color:#d4b0b7" />输入状态</button>
+        </div>
+    </div>
+    <div class="faces_div">
+        <a style="width:163px"></a>
+        <a id="left" class="faces" style="height:152px; width:162px; margin:1px 0;">
+            <input type="text" maxlength="1" value="U">
+            <input type="text" maxlength="1" value="U">
+            <input type="text" maxlength="1" value="U">
+            <input type="text" maxlength="1" value="U">
+            <input type="text" maxlength="1" value="U">
+            <input type="text" maxlength="1" value="U">
+            <input type="text" maxlength="1" value="U">
+            <input type="text" maxlength="1" value="U">
+            <input type="text" maxlength="1" value="U">
+        </a>
+        <a id="front" class="faces" style="height:152px; width:162px; margin:1px 0;">
+            <input type="text" maxlength="1" value="U">
+            <input type="text" maxlength="1" value="U">
+            <input type="text" maxlength="1" value="U">
+            <input type="text" maxlength="1" value="U">
+            <input type="text" maxlength="1" value="U">
+            <input type="text" maxlength="1" value="U">
+            <input type="text" maxlength="1" value="U">
+            <input type="text" maxlength="1" value="U">
+            <input type="text" maxlength="1" value="U">
+        </a>
+        <a id="right" class="faces" style="height:152px; width:162px; margin:1px 0;">
+            <input type="text" maxlength="1" value="U">
+            <input type="text" maxlength="1" value="U">
+            <input type="text" maxlength="1" value="U">
+            <input type="text" maxlength="1" value="U">
+            <input type="text" maxlength="1" value="U">
+            <input type="text" maxlength="1" value="U">
+            <input type="text" maxlength="1" value="U">
+            <input type="text" maxlength="1" value="U">
+            <input type="text" maxlength="1" value="U">
+        </a>
+        <a id="back" class="faces" style="height:152px; width:162px; margin:1px 0;">
+            <input type="text" maxlength="1" value="U">
+            <input type="text" maxlength="1" value="U">
+            <input type="text" maxlength="1" value="U">
+            <input type="text" maxlength="1" value="U">
+            <input type="text" maxlength="1" value="U">
+            <input type="text" maxlength="1" value="U">
+            <input type="text" maxlength="1" value="U">
+            <input type="text" maxlength="1" value="U">
+            <input type="text" maxlength="1" value="U">
         </a>
     </div>
-    <div id="up_mid">
-        <a style="width:205px"></a>
-        <a id="left" class="faces" style="height:102px; width:112px; margin:1px 0;">
-            <input type="text" maxlength="1" value="U">
-            <input type="text" maxlength="1" value="U">
-            <input type="text" maxlength="1" value="U">
-            <input type="text" maxlength="1" value="U">
-            <input type="text" maxlength="1" value="U">
-            <input type="text" maxlength="1" value="U">
-            <input type="text" maxlength="1" value="U">
-            <input type="text" maxlength="1" value="U">
-            <input type="text" maxlength="1" value="U">
-        </a>
-        <a style="width:3px"></a>
-        <a id="front" class="faces" style="height:102px; width:112px; margin:1px 0;">
-            <input type="text" maxlength="1" value="U">
-            <input type="text" maxlength="1" value="U">
-            <input type="text" maxlength="1" value="U">
-            <input type="text" maxlength="1" value="U">
-            <input type="text" maxlength="1" value="U">
-            <input type="text" maxlength="1" value="U">
-            <input type="text" maxlength="1" value="U">
-            <input type="text" maxlength="1" value="U">
-            <input type="text" maxlength="1" value="U">
-        </a>
-        <a style="width:3px"></a>
-        <a id="right" class="faces" style="height:102px; width:112px; margin:1px 0;">
-            <input type="text" maxlength="1" value="U">
-            <input type="text" maxlength="1" value="U">
-            <input type="text" maxlength="1" value="U">
-            <input type="text" maxlength="1" value="U">
-            <input type="text" maxlength="1" value="U">
-            <input type="text" maxlength="1" value="U">
-            <input type="text" maxlength="1" value="U">
-            <input type="text" maxlength="1" value="U">
-            <input type="text" maxlength="1" value="U">
-        </a>
-        <a style="width:3px"></a>
-        <a id="back" class="faces" style="height:102px; width:112px; margin:1px 0;">
-            <input type="text" maxlength="1" value="U">
-            <input type="text" maxlength="1" value="U">
-            <input type="text" maxlength="1" value="U">
-            <input type="text" maxlength="1" value="U">
-            <input type="text" maxlength="1" value="U">
-            <input type="text" maxlength="1" value="U">
-            <input type="text" maxlength="1" value="U">
-            <input type="text" maxlength="1" value="U">
-            <input type="text" maxlength="1" value="U">
-        </a>
-    </div>
-    <div id="up_bottom">
+    <div class="faces_div">
         <a style="width:330px"></a>
-        <a id="bottom" class="faces" style="height:102px; width:112px; margin:1px 0;">
+        <a id="bottom" class="faces" style="height:152px; width:162px; margin:1px 0;">
             <input type="text" maxlength="1" value="U">
             <input type="text" maxlength="1" value="U">
             <input type="text" maxlength="1" value="U">
@@ -135,7 +138,7 @@
             }
         }
         var aInt2 = document.getElementById('cs').getElementsByTagName('button');
-        var aInt3 = document.getElementById('cs').getElementsByTagName('input');
+        //var aInt3 = document.getElementById('cs').getElementsByTagName('input');
         aInt2[0].onclick = function () {
             cube.initColor();
         };
@@ -145,133 +148,437 @@
         aInt2[2].onclick = function () {
             cube.random();
         };
-        aInt2[4].onclick = function () {
-            var value = aInt3[0].value;
-            cube.turn3s(value);
-        };
-        aInt2[5].onclick = function () {
-            var value = aInt3[1].value;
-            cube.setColorChar(value);
-        };
+
+        //点击块，选择颜色
+        {
+            var tmp_div = document.getElementById('color_buttons').getElementsByTagName('button');
+            var color_now = '#fff';
+            var color_value = "R";
+            tmp_div[0].onclick = function () {
+                color_now = "red";
+                color_value = "L";
+            }
+            tmp_div[1].onclick = function () {
+                color_now = "orange";
+                color_value = "B";
+            }
+            tmp_div[2].onclick = function () {
+                color_now = "yellow";
+                color_value = "U";
+            }
+            tmp_div[3].onclick = function () {
+                color_now = "green";
+                color_value = "D";
+            }
+            tmp_div[4].onclick = function () {
+                color_now = "blue";
+                color_value = "F";
+            }
+            tmp_div[5].onclick = function () {
+                color_now = "#fff";
+                color_value = "R";
+            }
+        }
+
+        //给块上色
+        {   //up
+            {
+                var tmp_input_up = document.getElementById('up').getElementsByTagName('input');
+                tmp_input_up[0].onclick = function () {
+                    tmp_input_up[0].value = color_value;
+                    tmp_input_up[0].style.backgroundColor = color_now;
+                }
+                tmp_input_up[1].onclick = function () {
+                    tmp_input_up[1].value = color_value;
+                    tmp_input_up[1].style.backgroundColor = color_now;
+                }
+                tmp_input_up[2].onclick = function () {
+                    tmp_input_up[2].value = color_value;
+                    tmp_input_up[2].style.backgroundColor = color_now;
+                }
+                tmp_input_up[3].onclick = function () {
+                    tmp_input_up[3].value = color_value;
+                    tmp_input_up[3].style.backgroundColor = color_now;
+                }
+                tmp_input_up[4].onclick = function () {
+                    tmp_input_up[4].value = color_value;
+                    tmp_input_up[4].style.backgroundColor = color_now;
+                }
+                tmp_input_up[5].onclick = function () {
+                    tmp_input_up[5].value = color_value;
+                    tmp_input_up[5].style.backgroundColor = color_now;
+                }
+                tmp_input_up[6].onclick = function () {
+                    tmp_input_up[6].value = color_value;
+                    tmp_input_up[6].style.backgroundColor = color_now;
+                }
+                tmp_input_up[7].onclick = function () {
+                    tmp_input_up[7].value = color_value;
+                    tmp_input_up[7].style.backgroundColor = color_now;
+                }
+                tmp_input_up[8].onclick = function () {
+                    tmp_input_up[8].value = color_value;
+                    tmp_input_up[8].style.backgroundColor = color_now;
+                }
+            }
+            //left
+            {
+                var tmp_input_left = document.getElementById('left').getElementsByTagName('input');
+                tmp_input_left[0].onclick = function () {
+                    tmp_input_left[0].value = color_value;
+                    tmp_input_left[0].style.backgroundColor = color_now;
+                }
+                tmp_input_left[1].onclick = function () {
+                    tmp_input_left[1].value = color_value;
+                    tmp_input_left[1].style.backgroundColor = color_now;
+                }
+                tmp_input_left[2].onclick = function () {
+                    tmp_input_left[2].value = color_value;
+                    tmp_input_left[2].style.backgroundColor = color_now;
+                }
+                tmp_input_left[3].onclick = function () {
+                    tmp_input_left[3].value = color_value;
+                    tmp_input_left[3].style.backgroundColor = color_now;
+                }
+                tmp_input_left[4].onclick = function () {
+                    tmp_input_left[4].value = color_value;
+                    tmp_input_left[4].style.backgroundColor = color_now;
+                }
+                tmp_input_left[5].onclick = function () {
+                    tmp_input_left[5].value = color_value;
+                    tmp_input_left[5].style.backgroundColor = color_now;
+                }
+                tmp_input_left[6].onclick = function () {
+                    tmp_input_left[6].value = color_value;
+                    tmp_input_left[6].style.backgroundColor = color_now;
+                }
+                tmp_input_left[7].onclick = function () {
+                    tmp_input_left[7].value = color_value;
+                    tmp_input_left[7].style.backgroundColor = color_now;
+                }
+                tmp_input_left[8].onclick = function () {
+                    tmp_input_left[8].value = color_value;
+                    tmp_input_left[8].style.backgroundColor = color_now;
+                }
+            }
+            //front
+            {
+                var tmp_input_front = document.getElementById('front').getElementsByTagName('input');
+                tmp_input_front[0].onclick = function () {
+                    tmp_input_front[0].value = color_value;
+                    tmp_input_front[0].style.backgroundColor = color_now;
+                }
+                tmp_input_front[1].onclick = function () {
+                    tmp_input_front[1].value = color_value;
+                    tmp_input_front[1].style.backgroundColor = color_now;
+                }
+                tmp_input_front[2].onclick = function () {
+                    tmp_input_front[2].value = color_value;
+                    tmp_input_front[2].style.backgroundColor = color_now;
+                }
+                tmp_input_front[3].onclick = function () {
+                    tmp_input_front[3].value = color_value;
+                    tmp_input_front[3].style.backgroundColor = color_now;
+                }
+                tmp_input_front[4].onclick = function () {
+                    tmp_input_front[4].value = color_value;
+                    tmp_input_front[4].style.backgroundColor = color_now;
+                }
+                tmp_input_front[5].onclick = function () {
+                    tmp_input_front[5].value = color_value;
+                    tmp_input_front[5].style.backgroundColor = color_now;
+                }
+                tmp_input_front[6].onclick = function () {
+                    tmp_input_front[6].value = color_value;
+                    tmp_input_front[6].style.backgroundColor = color_now;
+                }
+                tmp_input_front[7].onclick = function () {
+                    tmp_input_front[7].value = color_value;
+                    tmp_input_front[7].style.backgroundColor = color_now;
+                }
+                tmp_input_front[8].onclick = function () {
+                    tmp_input_front[8].value = color_value;
+                    tmp_input_front[8].style.backgroundColor = color_now;
+                }
+            }
+            //right
+            {
+                var tmp_input_right = document.getElementById('right').getElementsByTagName('input');
+                tmp_input_right[0].onclick = function () {
+                    tmp_input_right[0].value = color_value;
+                    tmp_input_right[0].style.backgroundColor = color_now;
+                }
+                tmp_input_right[1].onclick = function () {
+                    tmp_input_right[1].value = color_value;
+                    tmp_input_right[1].style.backgroundColor = color_now;
+                }
+                tmp_input_right[2].onclick = function () {
+                    tmp_input_right[2].value = color_value;
+                    tmp_input_right[2].style.backgroundColor = color_now;
+                }
+                tmp_input_right[3].onclick = function () {
+                    tmp_input_right[3].value = color_value;
+                    tmp_input_right[3].style.backgroundColor = color_now;
+                }
+                tmp_input_right[4].onclick = function () {
+                    tmp_input_right[4].value = color_value;
+                    tmp_input_right[4].style.backgroundColor = color_now;
+                }
+                tmp_input_right[5].onclick = function () {
+                    tmp_input_right[5].value = color_value;
+                    tmp_input_right[5].style.backgroundColor = color_now;
+                }
+                tmp_input_right[6].onclick = function () {
+                    tmp_input_right[6].value = color_value;
+                    tmp_input_right[6].style.backgroundColor = color_now;
+                }
+                tmp_input_right[7].onclick = function () {
+                    tmp_input_right[7].value = color_value;
+                    tmp_input_right[7].style.backgroundColor = color_now;
+                }
+                tmp_input_right[8].onclick = function () {
+                    tmp_input_right[8].value = color_value;
+                    tmp_input_right[8].style.backgroundColor = color_now;
+                }
+            }
+            //back
+            {
+                var tmp_input_back = document.getElementById('back').getElementsByTagName('input');
+                tmp_input_back[0].onclick = function () {
+                    tmp_input_back[0].value = color_value;
+                    tmp_input_back[0].style.backgroundColor = color_now;
+                }
+                tmp_input_back[1].onclick = function () {
+                    tmp_input_back[1].value = color_value;
+                    tmp_input_back[1].style.backgroundColor = color_now;
+                }
+                tmp_input_back[2].onclick = function () {
+                    tmp_input_back[2].value = color_value;
+                    tmp_input_back[2].style.backgroundColor = color_now;
+                }
+                tmp_input_back[3].onclick = function () {
+                    tmp_input_back[3].value = color_value;
+                    tmp_input_back[3].style.backgroundColor = color_now;
+                }
+                tmp_input_back[4].onclick = function () {
+                    tmp_input_back[4].value = color_value;
+                    tmp_input_back[4].style.backgroundColor = color_now;
+                }
+                tmp_input_back[5].onclick = function () {
+                    tmp_input_back[5].value = color_value;
+                    tmp_input_back[5].style.backgroundColor = color_now;
+                }
+                tmp_input_back[6].onclick = function () {
+                    tmp_input_back[6].value = color_value;
+                    tmp_input_back[6].style.backgroundColor = color_now;
+                }
+                tmp_input_back[7].onclick = function () {
+                    tmp_input_back[7].value = color_value;
+                    tmp_input_back[7].style.backgroundColor = color_now;
+                }
+                tmp_input_back[8].onclick = function () {
+                    tmp_input_back[8].value = color_value;
+                    tmp_input_back[8].style.backgroundColor = color_now;
+                }
+            }
+            //bottom
+            {
+                var tmp_input_bottom = document.getElementById('bottom').getElementsByTagName('input');
+                tmp_input_bottom[0].onclick = function () {
+                    tmp_input_bottom[0].value = color_value;
+                    tmp_input_bottom[0].style.backgroundColor = color_now;
+                }
+                tmp_input_bottom[1].onclick = function () {
+                    tmp_input_bottom[1].value = color_value;
+                    tmp_input_bottom[1].style.backgroundColor = color_now;
+                }
+                tmp_input_bottom[2].onclick = function () {
+                    tmp_input_bottom[2].value = color_value;
+                    tmp_input_bottom[2].style.backgroundColor = color_now;
+                }
+                tmp_input_bottom[3].onclick = function () {
+                    tmp_input_bottom[3].value = color_value;
+                    tmp_input_bottom[3].style.backgroundColor = color_now;
+                }
+                tmp_input_bottom[4].onclick = function () {
+                    tmp_input_bottom[4].value = color_value;
+                    tmp_input_bottom[4].style.backgroundColor = color_now;
+                }
+                tmp_input_bottom[5].onclick = function () {
+                    tmp_input_bottom[5].value = color_value;
+                    tmp_input_bottom[5].style.backgroundColor = color_now;
+                }
+                tmp_input_bottom[6].onclick = function () {
+                    tmp_input_bottom[6].value = color_value;
+                    tmp_input_bottom[6].style.backgroundColor = color_now;
+                }
+                tmp_input_bottom[7].onclick = function () {
+                    tmp_input_bottom[7].value = color_value;
+                    tmp_input_bottom[7].style.backgroundColor = color_now;
+                }
+                tmp_input_bottom[8].onclick = function () {
+                    tmp_input_bottom[8].value = color_value;
+                    tmp_input_bottom[8].style.backgroundColor = color_now;
+                }
+            }
+        }
 
 
-        aInt2[6].onclick = function () {
-            var colorType = ['yellow', '#fff', 'blue', 'green', 'red', 'orange'];
-            var arr = [];
-            var loc = 0;
-            var cc = 0;
 
-            var tmp = document.getElementById('up').getElementsByTagName('input')
-            var state = tmp[0].value;
-            for (var i = 1; i < 9; i++) {
-                state = state + tmp[i].value;
-            }
+        //根据设置的状态将魔方涂色
+        var ace = document.getElementById('state_input').getElementsByTagName('button');
+        {
+            ace[0].onclick = function () {
+                var colorType = ['yellow', '#fff', 'blue', 'green', 'red', 'orange'];
+                var arr = [];
+                var loc = 0;
+                var cc = 0;
+                //构造涂色的字符串state
+                {
+                    var tmp = document.getElementById('up').getElementsByTagName('input');
+                    var state = tmp[0].value;
+                    for (var i = 1; i < 9; i++) {
+                        state = state + tmp[i].value;
+                    }
 
-            var tmp = document.getElementById('bottom').getElementsByTagName('input')
-            cc = 6;
-            while (cc < 9) {
-                state = state + tmp[cc].value;
-                cc++;
-            }
-            cc = 3;
-            while (cc < 6) {
-                state = state + tmp[cc].value;
-                cc++;
-            }
-            cc = 0;
-            while (cc < 3) {
-                state = state + tmp[cc].value;
-                cc++;
-            }
+                    var tmp = document.getElementById('bottom').getElementsByTagName('input');
+                    cc = 6;
+                    while (cc < 9) {
+                        state = state + tmp[cc].value;
+                        cc++;
+                    }
+                    cc = 3;
+                    while (cc < 6) {
+                        state = state + tmp[cc].value;
+                        cc++;
+                    }
+                    cc = 0;
+                    while (cc < 3) {
+                        state = state + tmp[cc].value;
+                        cc++;
+                    }
 
+                    var tmp = document.getElementById('left').getElementsByTagName('input')
+                    cc = 0;
+                    while (cc < 7) {
+                        state = state + tmp[cc].value;
+                        cc += 3;
+                    }
+                    cc = 1;
+                    while (cc < 8) {
+                        state = state + tmp[cc].value;
+                        cc += 3;
+                    }
+                    cc = 2;
+                    while (cc < 9) {
+                        state = state + tmp[cc].value;
+                        cc += 3;
+                    }
 
-            var tmp = document.getElementById('left').getElementsByTagName('input')
-            cc = 0;
-            while (cc < 7) {
-                state = state + tmp[cc].value;
-                cc+=3;
-            }
-            cc = 1;
-            while (cc < 8) {
-                state = state + tmp[cc].value;
-                cc+=3;
-            }
-            cc = 2;
-            while (cc < 9) {
-                state = state + tmp[cc].value;
-                cc+=3;
-            }
+                    var tmp = document.getElementById('right').getElementsByTagName('input')
+                    cc = 2;
+                    while (cc < 9) {
+                        state = state + tmp[cc].value;
+                        cc += 3;
+                    }
+                    cc = 1;
+                    while (cc < 8) {
+                        state = state + tmp[cc].value;
+                        cc += 3;
+                    }
+                    cc = 0;
+                    while (cc < 7) {
+                        state = state + tmp[cc].value;
+                        cc += 3;
+                    }
 
-            var tmp = document.getElementById('right').getElementsByTagName('input')
-            cc = 2;
-            while (cc < 9) {
-                state = state + tmp[cc].value;
-                cc += 3;
-            }
-            cc = 1;
-            while (cc < 8) {
-                state = state + tmp[cc].value;
-                cc += 3;
-            }
-            cc = 0;
-            while (cc < 7) {
-                state = state + tmp[cc].value;
-                cc += 3;
-            }
+                    var tmp = document.getElementById('front').getElementsByTagName('input')
+                    for (var i = 0; i < 9; i++) {
+                        state = state + tmp[i].value;
+                    }
 
-            var tmp = document.getElementById('front').getElementsByTagName('input')
-            for (var i = 0; i < 9; i++) {
-                state = state + tmp[i].value;
-            }
-
-            var tmp = document.getElementById('back').getElementsByTagName('input')
-            cc = 2;
-            while (cc > -1) {
-                state = state + tmp[cc].value;
-                cc--;
-            }
-            cc = 5;
-            while (cc > 2) {
-                state = state + tmp[cc].value;
-                cc--;
-            }
-            cc = 8;
-            while (cc > 5) {
-                state = state + tmp[cc].value;
-                cc--;
-            }
-
-            //state是要传入后端的字符串
-            color = state;
-            for (var i = 0; i < 6; i++) {
-                var sub = color.substr(i * 9, 9);//截取从i*9开始的连续9个字符
-                var subArr = [];
-                for (var j = 0; j < 9; j++) {
-                    switch (sub[j]) {
-                        case "U"://yellow
-                            subArr.push(colorType[0]);//如果是第0种颜色，则将white填入
-                            break;
-                        case "R"://white
-                            subArr.push(colorType[1]);
-                            break;
-                        case "F"://blue
-                            subArr.push(colorType[2]);
-                            break;
-                        case "D"://green
-                            subArr.push(colorType[3]);
-                            break;
-                        case "L"://red
-                            subArr.push(colorType[4]);
-                            break;
-                        case "B"://orange
-                            subArr.push(colorType[5]);
-                            break;
+                    var tmp = document.getElementById('back').getElementsByTagName('input')
+                    cc = 2;
+                    while (cc > -1) {
+                        state = state + tmp[cc].value;
+                        cc--;
+                    }
+                    cc = 5;
+                    while (cc > 2) {
+                        state = state + tmp[cc].value;
+                        cc--;
+                    }
+                    cc = 8;
+                    while (cc > 5) {
+                        state = state + tmp[cc].value;
+                        cc--;
                     }
                 }
-                arr.push(subArr);
-            }
-            cube.setColor(arr);
+                //构造传入后端的字符串msg
+                {
+                    var tmp = document.getElementById('up').getElementsByTagName('input');
+                    var msg = tmp[0].value;
+                    for (var i = 1; i < 9; i++) {
+                        msg = msg + tmp[i].value;
+                    }
 
+                    var tmp = document.getElementById('right').getElementsByTagName('input');
+                    for (var i = 0; i < 9; i++) {
+                        msg = msg + tmp[i].value;
+                    }
+
+                    var tmp = document.getElementById('front').getElementsByTagName('input');
+                    for (var i = 0; i < 9; i++) {
+                        msg = msg + tmp[i].value;
+                    }
+
+                    var tmp = document.getElementById('bottom').getElementsByTagName('input');
+                    for (var i = 0; i < 9; i++) {
+                        msg = msg + tmp[i].value;
+                    }
+
+                    var tmp = document.getElementById('left').getElementsByTagName('input');
+                    for (var i = 0; i < 9; i++) {
+                        msg = msg + tmp[i].value;
+                    }
+
+                    var tmp = document.getElementById('back').getElementsByTagName('input');
+                    for (var i = 0; i < 9; i++) {
+                        msg = msg + tmp[i].value;
+                    }
+                }
+
+                //state是要用作涂色的字符串，msg才是传入后端的字符串
+                color = state;
+                for (var i = 0; i < 6; i++) {
+                    var sub = color.substr(i * 9, 9);//截取从i*9开始的连续9个字符
+                    var subArr = [];
+                    for (var j = 0; j < 9; j++) {
+                        switch (sub[j]) {
+                            case "U"://yellow
+                                subArr.push(colorType[0]);//如果是第0种颜色，则将white填入
+                                break;
+                            case "R"://white
+                                subArr.push(colorType[1]);
+                                break;
+                            case "F"://blue
+                                subArr.push(colorType[2]);
+                                break;
+                            case "D"://green
+                                subArr.push(colorType[3]);
+                                break;
+                            case "L"://red
+                                subArr.push(colorType[4]);
+                                break;
+                            case "B"://orange
+                                subArr.push(colorType[5]);
+                                break;
+                        }
+                    }
+                    arr.push(subArr);
+                }
+                cube.setColor(arr);
+            }
         };
     </script>
 
