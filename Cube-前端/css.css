@@ -1,10 +1,8 @@
-
-
 input {
     font-size: 16px;
     height: 26px;
 }
-
+/*转动按键特效*/
 .btns button {
     height: 41px;
     width: 100px;
@@ -18,7 +16,7 @@ input {
     /*background-color: #5094a2;*/
     background-image: linear-gradient(to right, #5094a2 0%, #5094a7 100%);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 3px 8px rgba(0, 0, 0, 0.1);
-    transition-property: border-radius; /*ѡ��hover�仯��Ԫ��*/
+    transition-property: border-radius; /*选择hover变化的元素*/
     transition-duration: 1s;
     -webkit-transition-property: border-radius; /* Safari and Chrome */
     -webkit-transition-duration: 1s; /* Safari and Chrome */
@@ -27,29 +25,29 @@ input {
     border-radius: 30px;
 }
 
+/*功能按键特效*/
 .cs button {
-    height: 41px;
-    width: 100px;
+    height: 72px;
+    width: 200px;
     margin: 5px 0;
     padding: 0px;
     border: 0px #00ffff;
-    color: #FFFFFF; /*������ɫ*/
-    text-align: center; /*�������*/
-    font-size: 15px; /*�����ϸ*/
+    color: #FFFFFF; /*字体颜色*/
+    text-align: center; /*字体居中*/
+    font-size: 20px; /*字体粗细*/
     border: 2px #00ffff;
     /*border-radius: 12px;*/
     background-color: #00ffff;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2), 0 3px 8px rgba(0, 0, 0, 0.1);
-    transition-property: border-radius; /*ѡ��hover�仯��Ԫ��*/
+    transition-property: border-radius; /*选择hover变化的元素*/
     transition-duration: 1s;
     -webkit-transition-property: border-radius; /* Safari and Chrome */
     -webkit-transition-duration: 1s; /* Safari and Chrome */
 }
-
     .cs button:hover {
         border-radius: 30px;
     }
-
+/*
 .cs input {
     height: 41px;
     width: 100px;
@@ -60,10 +58,41 @@ input {
     background-color: #00ffff;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2), 0 3px 8px rgba(0, 0, 0, 0.1);
 }
-
+*/
 
 .faces input {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+.faces_div div {
+    height: 110px;
+    width: 300px;
+    display: inline-block
+}
+
+/*状态shuru按键特效*/
+#state_input button {
+    height: 81px;
+    width: 169px;
+    margin: 5px 0;
+    padding: 0px;
+    border: 0px #00ffff;
+    color: #FFFFFF; /*字体颜色*/
+    text-align: center; /*字体居中*/
+    font-size: 20px; /*字体粗细*/
+    border: 2px #00ffff;
+    /*border-radius: 12px;*/
+    background-color: #00ffff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2), 0 3px 8px rgba(0, 0, 0, 0.1);
+    transition-property: height width border-radius; /*选择hover变化的元素*/
+    transition-duration: 1s;
+    -webkit-transition-property: height width border-radius; /* Safari and Chrome */
+    -webkit-transition-duration: 1s; /* Safari and Chrome */
+}
+
+#state_input button:hover {
+    height: 110px;
+    width: 192px;
+    border-radius: 30px;
 }
 
 .mf {
@@ -78,8 +107,6 @@ a {
     display: inline-block;
 }
 
-
-
 #txt {
     height: 41px;
     width: 500px;
@@ -90,8 +117,8 @@ a {
 }
 
 .faces input {
-    height: 32px;
-    width: 32px;
+    height: 48px;
+    width: 48px;
     margin: 1px;
     padding: 0px;
     border-width: 2px;
@@ -101,3 +128,52 @@ a {
     text-align: center;
 }
 
+/*取色按键特效*/
+#color_buttons button {
+    height: 40px;
+    width: 72px;
+    margin: 5px;
+    padding: 0px;
+    color: #FFFFFF;
+    border: 0px #00ffff;
+    text-align: center;
+    font-size: 20px;
+    /*border-radius: 12px;*/
+    /*background-color: #5094a2;*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 3px 8px rgba(0, 0, 0, 0.1);
+    transition-property: height width border-radius; /*选择hover变化的元素*/
+    transition-duration: 1s;
+    -webkit-transition-property: height width border-radius; /* Safari and Chrome */
+    -webkit-transition-duration: 1s; /* Safari and Chrome */
+}
+    #color_buttons button:hover {
+        height: 60px;
+        width: 80px;
+        border-radius: 50px;
+    }
+
+/*tu色按键特效*/
+.faces input {
+    height: 48px;
+    width: 48px;
+    margin: 1px;
+    padding: 0px;
+    color: #c9a4a4;
+    border-width: 2px;
+    border: 2px #00ffff;
+    border-radius: 12px;
+    background-color: #00ffff;
+    text-align: center;
+    font-size: 20px;
+    /*border-radius: 12px;*/
+    /*background-color: #5094a2;*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 3px 8px rgba(0, 0, 0, 0.1);
+    transition-property: border-radius; /*选择hover变化的元素*/
+    transition-duration: 1s;
+    -webkit-transition-property: border-radius; /* Safari and Chrome */
+    -webkit-transition-duration: 1s; /* Safari and Chrome */
+}
+
+    .faces input:hover {
+        border-radius:40px;
+    }
