@@ -14,19 +14,19 @@
                       <el-col style="margin-left: 155px">
                         <a id="up" class="faces" style="margin:0px 0px 0px 0px;">
                           <el-row type="flex" justify="center">
-                            <input type="text" maxlength="1" value="R">
-                            <input type="text" maxlength="1" value="R">
-                            <input type="text" maxlength="1" value="R">
+                            <input type="text" maxlength="1" value="U">
+                            <input type="text" maxlength="1" value="U">
+                            <input type="text" maxlength="1" value="U">
                           </el-row>
                           <el-row type="flex" justify="center">
-                            <input type="text" maxlength="1" value="R">
-                            <input type="text" maxlength="1" value="R">
-                            <input type="text" maxlength="1" value="R">
+                            <input type="text" maxlength="1" value="U">
+                            <input type="text" maxlength="1" value="U">
+                            <input type="text" maxlength="1" value="U">
                           </el-row>
                           <el-row type="flex" justify="center">
-                            <input type="text" maxlength="1" value="R">
-                            <input type="text" maxlength="1" value="R">
-                            <input type="text" maxlength="1" value="R">
+                            <input type="text" maxlength="1" value="U">
+                            <input type="text" maxlength="1" value="U">
+                            <input type="text" maxlength="1" value="U">
                           </el-row>
                         </a>
                       </el-col>
@@ -40,19 +40,19 @@
                           <div>
                             <a id="left" class="faces">
                               <el-row type="flex" justify="center">
-                                <input type="text" maxlength="1" value="U">
-                                <input type="text" maxlength="1" value="U">
-                                <input type="text" maxlength="1" value="U">
+                                <input type="text" maxlength="1" value="L">
+                                <input type="text" maxlength="1" value="L">
+                                <input type="text" maxlength="1" value="L">
                               </el-row>
                               <el-row type="flex" justify="center">
-                                <input type="text" maxlength="1" value="U">
-                                <input type="text" maxlength="1" value="U">
-                                <input type="text" maxlength="1" value="U">
+                                <input type="text" maxlength="1" value="L">
+                                <input type="text" maxlength="1" value="L">
+                                <input type="text" maxlength="1" value="L">
                               </el-row>
                               <el-row type="flex" justify="center">
-                                <input type="text" maxlength="1" value="U">
-                                <input type="text" maxlength="1" value="U">
-                                <input type="text" maxlength="1" value="U">
+                                <input type="text" maxlength="1" value="L">
+                                <input type="text" maxlength="1" value="L">
+                                <input type="text" maxlength="1" value="L">
                               </el-row>
                             </a>
                           </div>
@@ -61,19 +61,19 @@
                           <div>
                             <a id="front" class="faces" >
                               <el-row type="flex" justify="center">
-                                <input type="text" maxlength="1" value="L">
-                                <input type="text" maxlength="1" value="L">
-                                <input type="text" maxlength="1" value="L">
+                                <input type="text" maxlength="1" value="F">
+                                <input type="text" maxlength="1" value="F">
+                                <input type="text" maxlength="1" value="F">
                               </el-row>
                               <el-row type="flex" justify="center">
-                                <input type="text" maxlength="1" value="L">
-                                <input type="text" maxlength="1" value="L">
-                                <input type="text" maxlength="1" value="L">
+                                <input type="text" maxlength="1" value="F">
+                                <input type="text" maxlength="1" value="F">
+                                <input type="text" maxlength="1" value="F">
                               </el-row>
                               <el-row type="flex" justify="center">
-                                <input type="text" maxlength="1" value="L">
-                                <input type="text" maxlength="1" value="L">
-                                <input type="text" maxlength="1" value="L">
+                                <input type="text" maxlength="1" value="F">
+                                <input type="text" maxlength="1" value="F">
+                                <input type="text" maxlength="1" value="F">
                               </el-row>
                             </a>
                           </div>
@@ -82,19 +82,19 @@
                           <div>
                             <a id="right" class="faces">
                               <el-row type="flex" justify="center">
-                                <input type="text" maxlength="1" value="F">
-                                <input type="text" maxlength="1" value="F">
-                                <input type="text" maxlength="1" value="F">
+                                <input type="text" maxlength="1" value="R">
+                                <input type="text" maxlength="1" value="R">
+                                <input type="text" maxlength="1" value="R">
                               </el-row>
                               <el-row type="flex" justify="center">
-                                <input type="text" maxlength="1" value="F">
-                                <input type="text" maxlength="1" value="F">
-                                <input type="text" maxlength="1" value="F">
+                                <input type="text" maxlength="1" value="R">
+                                <input type="text" maxlength="1" value="R">
+                                <input type="text" maxlength="1" value="R">
                               </el-row>
                               <el-row type="flex" justify="center">
-                                <input type="text" maxlength="1" value="F">
-                                <input type="text" maxlength="1" value="F">
-                                <input type="text" maxlength="1" value="F">
+                                <input type="text" maxlength="1" value="R">
+                                <input type="text" maxlength="1" value="R">
+                                <input type="text" maxlength="1" value="R">
                               </el-row>
                             </a>
                           </div>
@@ -103,19 +103,19 @@
                           <div>
                             <a id="back" class="faces">
                               <el-row type="flex" justify="center">
-                                <input type="text" maxlength="1" value="D">
-                                <input type="text" maxlength="1" value="D">
-                                <input type="text" maxlength="1" value="D">
+                                <input type="text" maxlength="1" value="B">
+                                <input type="text" maxlength="1" value="B">
+                                <input type="text" maxlength="1" value="B">
                               </el-row>
                               <el-row type="flex" justify="center">
-                                <input type="text" maxlength="1" value="D">
-                                <input type="text" maxlength="1" value="D">
-                                <input type="text" maxlength="1" value="D">
+                                <input type="text" maxlength="1" value="B">
+                                <input type="text" maxlength="1" value="B">
+                                <input type="text" maxlength="1" value="B">
                               </el-row>
                               <el-row type="flex" justify="center">
-                                <input type="text" maxlength="1" value="D">
-                                <input type="text" maxlength="1" value="D">
-                                <input type="text" maxlength="1" value="D">
+                                <input type="text" maxlength="1" value="B">
+                                <input type="text" maxlength="1" value="B">
+                                <input type="text" maxlength="1" value="B">
                               </el-row>
                             </a>
                           </div>
@@ -126,22 +126,22 @@
                 <!--下部分-->
                 <el-row type="flex">
                   <div>
-                    <el-col style="margin-left: 157px">
+                    <el-col style="margin-left: 155px">
                       <a id="bottom" class="faces">
                         <el-row type="flex" justify="center">
-                          <input type="text" maxlength="1" value="B">
-                          <input type="text" maxlength="1" value="B">
-                          <input type="text" maxlength="1" value="B">
+                          <input type="text" maxlength="1" value="D">
+                          <input type="text" maxlength="1" value="D">
+                          <input type="text" maxlength="1" value="D">
                         </el-row>
                         <el-row type="flex" justify="center">
-                          <input type="text" maxlength="1" value="B">
-                          <input type="text" maxlength="1" value="B">
-                          <input type="text" maxlength="1" value="B">
+                          <input type="text" maxlength="1" value="D">
+                          <input type="text" maxlength="1" value="D">
+                          <input type="text" maxlength="1" value="D">
                         </el-row>
                         <el-row type="flex" justify="center">
-                          <input type="text" maxlength="1" value="B">
-                          <input type="text" maxlength="1" value="B">
-                          <input type="text" maxlength="1" value="B">
+                          <input type="text" maxlength="1" value="D">
+                          <input type="text" maxlength="1" value="D">
+                          <input type="text" maxlength="1" value="D">
                         </el-row>
                       </a>
                     </el-col>
@@ -151,42 +151,55 @@
           </el-row>
 
 
-          <a style="width:50px;"></a>
+          <!--<a style="width:50px;"></a>-->
+        <el-row>
           <div id="color_buttons">
-            <button style="background-color:red;height: 20px"></button>
-            <button style="background-color:orange;height: 20px"></button>
-            <button style="background-color:yellow;height: 20px"></button>
-            <button style="background-color:green;height: 20px"></button>
-            <button style="background-color:blue;height: 20px"></button>
-            <button style="background-color:#FFF;height: 20px"></button>
+            <button style="background-color:red;height: 30px;width: 50px"></button>
+            <button style="background-color:orange;height: 30px;width: 50px"></button>
+            <button style="background-color:yellow;height: 30px;width: 50px"></button>
+            <button style="background-color:green;height: 30px;width: 50px"></button>
+            <button style="background-color:blue;height: 30px;width: 50px"></button>
+            <button style="background-color:#FFF;height: 30px;width: 50px"></button>
           </div>
-
-          <div id="btns" class="btns" style="margin:50px auto 20px; width:500px;">
-              <input type="button" value="u"/>
-              <input type="button" value="d"/>
-              <input type="button" value="l"/>
-              <input type="button" value="r"/>
-              <input type="button" value="f"/>
-              <input type="button" value="b"/>
-              <input type="button" value="u'"/>
-              <input type="button" value="d'"/>
-              <input type="button" value="l'"/>
-              <input type="button" value="r'"/>
-              <input type="button" value="f'"/>
-              <input type="button" value="b'"/>
+        </el-row>
+        <el-row type="flex" style="margin-top: 0px">
+          <div id="btns" class="btns" style="margin:20px auto 0px;">
+            <el-row>
+              <input type="button" value="u" style="width: 40px;height: 25px"/>
+              <input type="button" value="d" style="width: 40px;height: 25px"/>
+              <input type="button" value="l" style="width: 40px;height: 25px"/>
+              <input type="button" value="r" style="width: 40px;height: 25px"/>
+              <input type="button" value="f" style="width: 40px;height: 25px"/>
+              <input type="button" value="b" style="width: 40px;height: 25px"/>
+            </el-row>
+            <el-row>
+              <input type="button" value="u'" style="width: 40px;height: 25px"/>
+              <input type="button" value="d'" style="width: 40px;height: 25px"/>
+              <input type="button" value="l'" style="width: 40px;height: 25px"/>
+              <input type="button" value="r'" style="width: 40px;height: 25px"/>
+              <input type="button" value="f'" style="width: 40px;height: 25px"/>
+              <input type="button" value="b'" style="width: 40px;height: 25px"/>
+            </el-row>
           </div>
+        </el-row>
 
-          <div class="cs" id="cs" style="width:300px; margin:0 auto;">
-              <input type="button" value="重置颜色" style="margin-top:10px;"/>
-              <input type="button" value="重置位置" style="margin-top:10px;"/>
-              <input type="button" value="随机打乱" style="margin-top:10px;"/>
+        <div>
+          <p v-if="seen">可行解序列为：{{ways}}</p>
+        </div>
+
+          <div class="cs" id="cs" style="margin-top: 10px;">
+            <el-button type="primary" size="small">重置颜色</el-button>
+            <el-button type="primary" size="small">重置位置</el-button>
+            <el-button type="primary" size="small">随机打乱</el-button>
               <!--<input type="text" style="margin-top:10px;" value="ddr'd'ffbdrrddr'ffd'ffu'bblluudrru">-->
               <!--<input type="button" style="margin-top:10px" value="批量操作"/>-->
               <!--<input type="text" style="margin-top:10px;" value="DRLUUBFBRBLURRLRUBLRDDFDLFUFUFFDBRDUBRUFLLFDDBFLUBLRBD">-->
-              <input type="button" style="margin-top:10px" value="设置颜色"/>
-              <input type="button" style="margin-top:10px" value="还原"/>
+            <el-button type="primary" size="small">设置颜色</el-button>
+            <el-button type="primary" size="small">还原</el-button>
+            <el-button type="primary" size="small">可行解</el-button>
           </div>
       </el-row>
+
 
 
 
@@ -202,11 +215,12 @@
     // import {Vue} from "vue";
     export default {
         name: "cubeVue",
-        // data: function(){
-        //     return{
-        //         initC:''
-        //     }
-        // },
+        data: function(){
+            return{
+                ways:"",
+                seen:false
+            }
+        },
         mounted(){
           this.solution();
         },
@@ -226,7 +240,9 @@
                     cube.turn3(this.value);
                   }
                 }
-                let aInt2=document.getElementById('cs').getElementsByTagName('input');
+              console.log(document.getElementById('cs'))
+              console.log(document.getElementById('cs').getElementsByTagName('button'))
+                let aInt2=document.getElementById('cs').getElementsByTagName('button');
                 aInt2[0].onclick=function(){
                   cube.initColor();
                 };
@@ -236,7 +252,7 @@
                 //随机打乱
                 aInt2[2].onclick=function(){
                   // cube.random();
-                  axios.get('/apis/scramble').then(response => {
+                  axios.get('http://127.0.0.1:8081/cubeBack/scramble').then(response => {
                     console.log(response.data)
                     cube.setColorChar(response.data)
                     initC = response.data
@@ -426,7 +442,7 @@
                 aInt2[4].onclick=function(){
                   // let vm = this
                   // console.log(initC)
-                    axios.post('/apis/operation',qs.stringify({
+                    axios.post('http://127.0.0.1:8081/cubeBack/operation',qs.stringify({
                         "initC": initC
                     })).then(response => {
                         console.log(response.data)
@@ -448,14 +464,39 @@
                     })
                 };
 
+                //可行解
+                aInt2[5].onclick=function(){
+                  axios.post('http://127.0.0.1:8081/cubeBack/ways',qs.stringify({
+                    "initC" : initC
+                  })).then(response => {
+                    console.log(response.data)
+                    tt.ways = response.data
+                    console.log("ways:"+tt.ways)
+                    tt.seen = true
+                    console.log("this:"+tt)
+                    console.log("seen:"+tt.seen)
+                    // tt.$alert(response.data, '可行解', {
+                    //   confirmButtonText: '确定',
+                    //   callback: action => {
+                    //     this.$message({
+                    //       type: 'info',
+                    //       message: `action: ${ action }`
+                    //     });
+                    //   }
+                    // });
+
+                  })
+                };
 
 
+              let color_value
+              let color_now
 
               //点击块，选择颜色
               {
                 let tmp_div = document.getElementById('color_buttons').getElementsByTagName('button');
-                let color_now = '#fff';
-                let color_value = "R";
+                 color_now = '#fff';
+                 color_value = "R";
                 tmp_div[0].onclick = function () {
                   color_now = "red";
                   color_value = "L";
@@ -745,4 +786,5 @@
     background-color: #CCCCCC;
     text-align: center;
   }
+
 </style>

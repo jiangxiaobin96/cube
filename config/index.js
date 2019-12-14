@@ -3,8 +3,14 @@
 // see http://vuejs-templates.github.io/webpack for documentation.
 
 const path = require('path')
-
+const baseUrl = process.env.NODE_ENV === "production" ? "/static/" : "/"; //font scss资源路径 不同环境切换控制
 module.exports = {
+  baseUrl: './',
+  outputDir: 'dist',
+  assetsDir: 'static',
+  pages: undefined,
+  runtimeCompiler: false,
+  productionSourceMap: false,
   dev: {
 
     // Paths
@@ -12,17 +18,17 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
         '/apis':{
-            target: 'http://localhost:8088',
+            target: 'http://39.105.171.199:8081/cubeBack',
             changeOrigin: true,
             pathRewrite: {
-                '/apis': ''
+              '/apis': '',
             }
         }
     },
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST
-    port: 8080, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
+    port: 8100, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
     autoOpenBrowser: false,
     errorOverlay: true,
     notifyOnErrors: true,
