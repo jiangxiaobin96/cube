@@ -2,17 +2,19 @@
     <div style="background: #eeeeee;">
 
       <el-row>
-          <el-row type="flex" justify="center">
+          <el-row type="flex">
               <el-col :span="12">
                   <div style="margin:120px auto 80px;" id="mofang" ></div>
               </el-col>
               <el-col :span="12" style="margin-top: 70px;margin-left: 10px">
 
                 <!--上部分-->
-                <el-row type="flex">
+                <el-row type="flex" justify="center">
                     <div>
-                      <el-col style="margin-left: 155px">
-                        <a id="up" class="faces" style="margin:0px 0px 0px 0px;">
+                      <!--<el-col :span="6"><div></div></el-col>-->
+                      <el-col :span="1" :offset="0">
+                        <div>
+                        <a id="up" class="faces">
                           <el-row type="flex" justify="center">
                             <input type="text" maxlength="1" value="U">
                             <input type="text" maxlength="1" value="U">
@@ -29,7 +31,10 @@
                             <input type="text" maxlength="1" value="U">
                           </el-row>
                         </a>
+                        </div>
                       </el-col>
+                      <!--<el-col :span="6"><div></div></el-col>-->
+                      <!--<el-col :span="6"><div></div></el-col>-->
                     </div>
                 </el-row>
 
@@ -124,9 +129,9 @@
                 </el-row>
 
                 <!--下部分-->
-                <el-row type="flex">
+                <el-row type="flex" justify="center">
                   <div>
-                    <el-col style="margin-left: 155px">
+                    <el-col :span="1" :offset="0">
                       <a id="bottom" class="faces">
                         <el-row type="flex" justify="center">
                           <input type="text" maxlength="1" value="D">
@@ -188,15 +193,27 @@
         </div>
 
           <div class="cs" id="cs" style="margin-top: 10px;">
-            <el-button type="primary" size="small">重置颜色</el-button>
-            <el-button type="primary" size="small">重置位置</el-button>
-            <el-button type="primary" size="small">随机打乱</el-button>
+            <el-tooltip class="item" effect="dark" content="将颜色重置为初始颜色状态" placement="top-start">
+              <el-button type="primary" size="small">重置颜色</el-button>
+            </el-tooltip>
+            <el-tooltip class="item" effect="dark" content="将魔方位置重置为初始初始位置" placement="top-start">
+              <el-button type="primary" size="small">重置位置</el-button>
+            </el-tooltip>
+            <el-tooltip class="item" effect="dark" content="随机生成魔方的颜色" placement="top-start">
+              <el-button type="primary" size="small">随机生成魔方颜色</el-button>
+            </el-tooltip>
               <!--<input type="text" style="margin-top:10px;" value="ddr'd'ffbdrrddr'ffd'ffu'bblluudrru">-->
               <!--<input type="button" style="margin-top:10px" value="批量操作"/>-->
               <!--<input type="text" style="margin-top:10px;" value="DRLUUBFBRBLURRLRUBLRDDFDLFUFUFFDBRDUBRUFLLFDDBFLUBLRBD">-->
-            <el-button type="primary" size="small">设置颜色</el-button>
-            <el-button type="primary" size="small">还原</el-button>
-            <el-button type="primary" size="small">可行解</el-button>
+            <el-tooltip class="item" effect="dark" content="将涂好的颜色设置到魔方上去" placement="top-start">
+              <el-button type="primary" size="small">魔方涂色</el-button>
+            </el-tooltip>
+            <el-tooltip class="item" effect="dark" content="将魔方还原" placement="top-start">
+              <el-button type="primary" size="small">魔方还原</el-button>
+            </el-tooltip>
+            <el-tooltip class="item" effect="dark" content="魔方还原的可行步骤" placement="top-start">
+              <el-button type="primary" size="small">魔方还原的可行步骤</el-button>
+            </el-tooltip>
           </div>
       </el-row>
 
@@ -448,6 +465,7 @@
                         console.log(response.data)
                         if(response.data.indexOf("Error") == -1){
                           cube.turn3s(response.data)
+                          initC = ""
                         }else{
                           tt.$alert('此次输入为非法输入! 请重新输入。', '提示', {
                             confirmButtonText: '确定',
